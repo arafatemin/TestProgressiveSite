@@ -8,28 +8,27 @@ public class FinalDetailsEdit {
     public WebDriver driver;
 
     By btnOne = By.cssSelector("div:nth-of-type(2) > .input-container > input[name='viewModel_embedded_questions_list_InsuranceToday']");
-    By btnTwo = By.cssSelector("div:nth-of-type(2) > .input-container > input[name='viewModel_embedded_questions_list_InsuranceLastMonth']");
-    By btnThree = By.cssSelector("div:nth-of-type(2) > .input-container > input[name='viewModel_embedded_questions_list_OtherPolicies']");
+    By btnTwoNo = By.cssSelector("div:nth-of-type(2) > .input-container > input[name='viewModel_embedded_questions_list_InsuranceLastMonth']");
+    By btnThreeNo = By.cssSelector("div:nth-of-type(2) > .input-container > input[name='viewModel_embedded_questions_list_OtherPolicies']");
     By emailAddress = By.cssSelector("[analyticsevent='focus']");
-    By residentsNumber = By.cssSelector(".ng-pristine.ng-invalid.ng-star-inserted.ng-touched");
+    By residentsNumber = By.xpath("//main[@id='main']/final-details[@class='ng-star-inserted']/interview-layout-template//additional-information//select-input[@class='control']/select[@name='FinalDetailsEdit_embedded_questions_list_TotalResidents']");
     By continueBtn = By.cssSelector(".blue > button");
-
 
 
     public FinalDetailsEdit(WebDriver driver) {
         this.driver = driver;
     }
 
-    public WebElement getBtnOne() {
+    public WebElement getBtnNo() {
         return driver.findElement(btnOne);
     }
 
-    public WebElement getBtnTwo() {
-        return driver.findElement(btnTwo);
+    public WebElement getBtnTwoNo() {
+        return driver.findElement(btnTwoNo);
     }
 
-    public WebElement getBtnThree() {
-        return driver.findElement(btnThree);
+    public WebElement getBtnThreeNo() {
+        return driver.findElement(btnThreeNo);
     }
 
     public WebElement getEmailAddress() {

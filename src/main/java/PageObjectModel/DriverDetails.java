@@ -51,6 +51,9 @@ public class DriverDetails {
     public WebElement getYearsLicensed() {
         return driver.findElement(yearsLicensed);
     }
+    public WebElement getUsLicensed() {
+        return driver.findElement(licenseType);
+    }
 
     public WebElement getAccidentBtn() {
         return driver.findElement(accidentBtn);

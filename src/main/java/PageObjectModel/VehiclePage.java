@@ -9,9 +9,9 @@ public class VehiclePage {
     public WebDriver driver;
 
 
-    By year = By.cssSelector(".control > select[name='VehiclesEdit_embedded_questions_list_Year']");
-    By make = By.cssSelector(".ymm-desktop > .make:nth-child(6) > .ng-star-inserted:nth-child(1) .control .ng-untouched.ng-pristine.ng-star-inserted.ng-valid");
-    By model = By.cssSelector(".model > .ng-star-inserted:nth-child(1) .control .ng-untouched.ng-pristine.ng-star-inserted.ng-valid");
+    By year = By.cssSelector(".control > select[name='VehiclesNew_embedded_questions_list_Year']");
+    By make = By.cssSelector(".control.disabled > select[name='VehiclesNew_embedded_questions_list_Make']");
+    By model = By.cssSelector(".model .ng-untouched");
     By bodyType = By.cssSelector(".control > select[name='VehiclesEdit_embedded_questions_list_BodyStyle']");
     By vehicleUse = By.cssSelector(".control > select[name='VehiclesEdit_embedded_questions_list_VehicleUse']");
     By rideSharing = By.cssSelector(".ng-dirty");
@@ -19,7 +19,7 @@ public class VehiclePage {
     By ownOrLease = By.cssSelector(".control > select[name='VehiclesEdit_embedded_questions_list_OwnOrLease']");
     By lengthOfOwnership = By.cssSelector(".control > select[name='VehiclesEdit_embedded_questions_list_LengthOfOwnership']");
     By annualMileageForRate = By.cssSelector(".control > select[name='VehiclesEdit_embedded_questions_list_AnnualMileageForRate']");
-    By doneBtn = By.cssSelector("[forwardnavtext] [aria-live]");
+    By doneBtn = By.cssSelector(".blue > button");
 
 
 
